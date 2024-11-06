@@ -1,0 +1,184 @@
+/* Custom CSS starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: rgb(2, 2, 61);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Padding for spacing in smaller screens */
+    height: 85px;
+    background-color: rgb(3, 3, 125);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: rgb(173, 173, 249);
+}
+
+/* First Section Styles */
+.first_section {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.leftsection {
+    font-size: 3.2rem;
+    align-items: center;
+}
+
+.rightsection img {
+    width: 80%;
+    max-width: 300px;
+    /* Limits image size for responsiveness */
+    height: auto;
+    margin: 10px 0;
+}
+
+.purple {
+    color: rgb(104, 80, 255);
+}
+
+#element {
+    color: rgb(104, 80, 255);
+}
+
+/* Second Section (Projects) Styles */
+.second_section {
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(2, 2, 80, 0.8) 0%, rgba(104, 80, 255, 0.8) 100%);
+    text-align: center;
+}
+
+.project {
+    margin: 50px 10px;
+}
+
+h3 {
+    color: rgb(184, 175, 255);
+}
+
+/* Third Section (Contact) Styles */
+.third_section {
+    padding: 50px;
+    text-align: center;
+}
+
+.third_section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #c3c3c3;
+}
+
+/* Contact Form Styles */
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+    background-color: rgb(3, 3, 126);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+    background-color: rgb(5, 5, 175);
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(3, 3, 125);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(139, 115, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .first_section {
+        flex-direction: column;
+    }
+
+    .leftsection,
+    .rightsection {
+        width: 90%;
+    }
+
+    .second_section,
+    .third_section {
+        padding: 20px;
+    }
+}

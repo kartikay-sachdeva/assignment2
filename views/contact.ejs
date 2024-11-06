@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<main>
+    <section id="contact" class="third_section">
+        <h1>Contact Me</h1>
+        <p>If you have any questions, comments, or just want to get in touch, please fill out the form below:</p>
+
+        <form action="/submit" method="POST" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your message here" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
